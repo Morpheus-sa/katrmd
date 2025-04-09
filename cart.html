@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart - KAT RMD Shop</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body class="cart-page">
+    <header>
+        <div class="container">
+            <h1 class="logo">KAT RMD Shop</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="cart.html">Cart</a></li>
+                    <li><a href="login.html">Login</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="cart">
+            <div class="container">
+                <h2>Your Cart</h2>
+                <table class="cart-table">
+                    <thead>
+                        <tr>
+                            <th>Product</th>
+                            <th>Price</th>
+                            <th>Quantity</th>
+                            <th>Total</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Leather Jacket</td>
+                            <td>R599.99</td>
+                            <td>1</td>
+                            <td>R599.99</td>
+                            <td><button class="remove-btn">Remove</button></td>
+                        </tr>
+                        <tr>
+                            <td>Wireless Earbuds</td>
+                            <td>R179.99</td>
+                            <td>2</td>
+                            <td>R359.98</td>
+                            <td><button class="remove-btn">Remove</button></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="cart-total">
+                    <h3>Total: R959.97</h3>
+                    <button class="checkout-btn">Proceed to Checkout</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>© 2025 ShopTrend. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

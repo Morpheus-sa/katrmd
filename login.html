@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - KAT RMD Shop</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1 class="logo">KAT RMD Shop</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="cart.html">Cart</a></li>
+                    <li><a href="login.html">Login</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="login">
+            <div class="container">
+                <h2>Login</h2>
+                <form class="login-form">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" placeholder="Enter your email" required>
+                    <label for="password">Password</label>
+                    <input type="password" id="password" placeholder="Enter your password" required>
+                    <label for="role">Role</label>
+                    <select id="role" name="role" required>
+                        <option value="user">User</option>
+                        <option value="admin">Admin</option>
+                    </select>
+                    <button type="submit" class="login-btn" onclick="redirectToDashboard()">Login</button>
+                    <p>Not a member? <a href="#">Sign up</a></p>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>© 2025 ShopTrend. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Simulate redirect based on role (replace with real backend logic later)
+        function redirectToDashboard() {
+            const role = document.getElementById('role').value;
+            if (role === 'user') {
+                window.location.href = 'user-dashboard.html';
+            } else if (role === 'admin') {
+                window.location.href = 'admin-dashboard.html';
+            }
+            event.preventDefault(); // Prevent form submission for demo
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard - KAT RMD Shop</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1 class="logo">KAT RMD Shop</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="cart.html">Cart</a></li>
+                    <li><a href="login.html">Logout</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="dashboard">
+            <div class="container">
+                <h2>Welcome, Admin!</h2>
+                <div class="dashboard-content">
+                    <h3>Manage Products</h3>
+                    <table class="product-table">
+                        <thead>
+                            <tr>
+                                <th>Product ID</th>
+                                <th>Name</th>
+                                <th>Price</th>
+                                <th>Stock</th>
+                                <th>Action</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>P001</td>
+                                <td>Leather Jacket</td>
+                                <td>R599.99</td>
+                                <td>50</td>
+                                <td><button class="edit-btn">Edit</button> <button class="remove-btn">Delete</button></td>
+                            </tr>
+                            <tr>
+                                <td>P002</td>
+                                <td>Wireless Earbuds</td>
+                                <td>R179.99</td>
+                                <td>30</td>
+                                <td><button class="edit-btn">Edit</button> <button class="remove-btn">Delete</button></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <h3>All Orders</h3>
+                    <table class="order-table">
+                        <thead>
+                            <tr>
+                                <th>Order ID</th>
+                                <th>User</th>
+                                <th>Date</th>
+                                <th>Total</th>
+                                <th>Status</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>#12345</td>
+                                <td>Kamogelo</td>
+                                <td>April 01, 2025</td>
+                                <td>R1399.98</td>
+                                <td>Shipped</td>
+                            </tr>
+                            <tr>
+                                <td>#12346</td>
+                                <td>Lesedi</td>
+                                <td>April 05, 2025</td>
+                                <td>R149.99</td>
+                                <td>Pending</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>© 2025 ShopTrend. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
